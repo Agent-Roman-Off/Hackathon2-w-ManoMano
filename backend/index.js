@@ -6,33 +6,30 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.use('/', (req, res) => {
-  res.status(404).send('Route not found! ');
+app.get('/article', async (req, res) => {
+  const list = db.query(
+    `SELECT DISTINCT(idConsumables)
+      FROM articles
+      INNER JOIN consumables ON articles.id = consumables.idArticles
+      INNER JOIN orderline ON articles.id = orderline.idArticles
+      INNER JOIN orders ON order.id = orderline.idOrders
+      INNER JOIN users ON users.id = orderline.idOrders
+      ;`
+  );
+  try {
+    const [listArticles] = await db.query(`
+    SELECT article
+    FROM id in (${list})
+  `);
+    res.json(listArticles);
+  } catch (err) {
+    console.warn(err);
+    res.status(404).send();
+  }
 });
 
-app.get('/indoor', async (req, res) => {
-  const result = [];
-  try {
-    db.query(
-      `SELECT distinct adresses_longitude, adresses_latitude FROM mesures;`
-    ).then((data) => {
-      data[0].map((row) => {
-        return db
-          .query(
-            `SELECT * FROM mesures WHERE adresses_longitude=? AND adresses_latitude=? ORDER BY timestamp LIMIT 1;`,
-            [row.adresses_longitude, row.adresses_latitude]
-          )
-          .then((data2) => {
-            result.push(data2[0]);
-            if (result.length === data[0].length) {
-              res.status(200).send(result);
-            }
-          });
-      });
-    });
-  } catch (error) {
-    console.log(error);
-  }
+app.use('/', (req, res) => {
+  res.status(404).send('Route not found! ');
 });
 
 app.listen(5050, () => {

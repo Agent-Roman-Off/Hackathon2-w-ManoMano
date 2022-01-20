@@ -1,3 +1,4 @@
+import Product from 'Components/Product';
 import BasketPageStyle from './style';
 
 export default function BasketPage() {
@@ -34,7 +35,10 @@ export default function BasketPage() {
                 a local call.
               </p>
             </div>
-            <div className="div3"> 3</div>
+            <div className="div3">
+              <Product />
+              <Product />
+            </div>
           </div>
         </main>
       </BasketPageStyle>

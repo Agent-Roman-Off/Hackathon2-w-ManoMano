@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 const BasketPageStyle = styled.main`
-  .main{
+  *{
     background-color: #f5f6f7;
+  }
+  .main{
     font-family: Open Sans,mm-main,arial,sans-serif;
     font-size: 1.1 rem;
   }

@@ -1,10 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
-import PurchaseList from './PurchaseList';
+import BasketPage from 'Components/BasketPage';
+import PurchaseList from './Components/PurchaseList';
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<PurchaseList />} />
+      <Route path="/basketpage" element={<BasketPage />} />
     </Routes>
   );
 }

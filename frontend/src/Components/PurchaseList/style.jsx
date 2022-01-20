@@ -29,7 +29,6 @@ const SPurchaseList = styled.main`
 
       h3 {
         font-size: 18px;
-        height: 5px;
       }
       p {
         font-size: 15px;
@@ -43,6 +42,18 @@ const SPurchaseList = styled.main`
         padding-top: 20px;
         padding-left: 10px;
       }
+    }
+    .containerButton {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .cartButton {
+      cursor: pointer;
+      margin-bottom: 20px;
+      margin-right: 20px;
+      height: 5vh;
+      width: 10vw;
     }
   }
 `;

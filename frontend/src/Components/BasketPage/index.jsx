@@ -1,4 +1,4 @@
-import Product from 'Components/Product';
+import Product from '../Product';
 import BasketPageStyle from './style';
 
 export default function BasketPage() {

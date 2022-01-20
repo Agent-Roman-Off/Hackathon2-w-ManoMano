@@ -20,6 +20,11 @@ export default function purchaseList() {
             />
             <p>Marteau de Mécanicien 32mm Manche Graphite FACOM 200C.32</p>
           </div>
+          <div className="containerButton">
+            <button className="cartButton" type="button">
+              Ajouter au panier
+            </button>
+          </div>
         </div>
       </SPurchaseList>
     </>

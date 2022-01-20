@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 const SPurchaseList = styled.main`
+  * {
+    background-color: #f5f6f7;
+  }
   .title {
     width: 50vw;
     margin: auto;
@@ -55,6 +58,10 @@ const SPurchaseList = styled.main`
       height: 5vh;
       width: 10vw;
     }
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
   }
 `;
 

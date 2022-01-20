@@ -13,15 +13,15 @@ function Header() {
       <input
         className="searchbar"
         type="search"
-        placeholder="Rechercher un produit, une marque ou un conseil"
+        placeholder="Look for a product, a brand or some advice"
       />
       <section className="logCont">
         <div className="supplyBtn">
           <NavLink to="/resupply">Resupply</NavLink>
         </div>
         <div className="greetCont">
-          <p>Bonjour Othmane</p>
-          <p>Mon compte</p>
+          <p>Hello Othmane</p>
+          <p>My Account</p>
         </div>
         <div className="basketCont">
           <NavLink to="checkout">

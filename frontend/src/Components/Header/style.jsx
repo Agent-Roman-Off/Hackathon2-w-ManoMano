@@ -17,6 +17,7 @@ const SHeader = styled.header`
   .searchbar {
     width: 400px;
     height: 30px;
+    padding: 10px;
     background-color: #eeebeb;
     border: 0.5px solid #0c193a;
     border-radius: 20px;

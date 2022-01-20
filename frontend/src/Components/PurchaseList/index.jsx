@@ -5,13 +5,13 @@ export default function purchaseList() {
     <>
       <SPurchaseList>
         <div className="title">
-          <h1>Mes achats</h1>
-          <p>Tous les produits achetés</p>
+          <h1>Relevant consumables</h1>
+          <p>Display all the consumables related to previous purchases</p>
         </div>
         <div className="article1">
           <div className="status">
-            <h3>Expédiée</h3>
-            <p>Commandé le 19 janvier 2021</p>
+            <h3>Because you bought RELATED PRODUCT</h3>
+            <p>Ordered on DATE</p>
           </div>
           <div className="rowArticle">
             <img

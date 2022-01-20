@@ -29,7 +29,6 @@ const SPurchaseList = styled.main`
 
       h3 {
         font-size: 18px;
-        height: 5px;
       }
       p {
         font-size: 15px;

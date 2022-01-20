@@ -1,5 +1,12 @@
+import { Routes, Route } from 'react-router-dom';
+import PurchaseList from './PurchaseList';
+
 function App() {
-  return <h1>Hello there!</h1>;
+  return (
+    <Routes>
+      <Route path="/" element={<PurchaseList />} />
+    </Routes>
+  );
 }
 
 export default App;

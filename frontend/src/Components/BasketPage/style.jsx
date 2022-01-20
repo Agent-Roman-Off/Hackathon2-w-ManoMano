@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 
 const BasketPageStyle = styled.main`
-  *{
-    background-color: #f5f6f7;
-  }
   .main{
     font-family: Open Sans,mm-main,arial,sans-serif;
     font-size: 1.1 rem;
@@ -12,20 +9,23 @@ const BasketPageStyle = styled.main`
     font-weight: 800;
   }
   .container {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
   }
   .parent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
   }
 
   .div2 {
     grid-area: 1 / 4 / 6 / 5;
-    height 3rem
+    height 2rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.13);
+    padding: 1rem;
   }
   .div1 {
     grid-area: 1 / 1 / 2 / 4;
@@ -37,8 +37,9 @@ const BasketPageStyle = styled.main`
   }
   .flexColumn {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: column; 
+    justify-content: space-around;
+    height: 100%
   }
   .bigCharacter {
     font-size: 2rem;

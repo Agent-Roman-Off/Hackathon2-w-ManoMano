@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 
 const SPurchaseList = styled.main`
-  * {
-    background-color: #f5f6f7;
-  }
   .title {
     width: 50vw;
     margin: auto;
@@ -16,9 +13,12 @@ const SPurchaseList = styled.main`
       color: #353333;
     }
   }
+  .background {
+    background: #fff;
+  }
   .article1 {
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
-      rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 0.5rem 0.5rem,
+      rgba(9, 30, 66, 0.13) 0px 0px 0.5rem 0.5rem;
     width: 50vw;
     margin: auto;
     margin-top: 50px;
@@ -62,6 +62,7 @@ const SPurchaseList = styled.main`
   .details {
     display: flex;
     flex-direction: column;
+    padding-left: 2rem;
   }
 `;
 

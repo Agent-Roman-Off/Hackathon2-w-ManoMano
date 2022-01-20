@@ -1,6 +1,20 @@
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 import SPurchaseList from './style';
 
 export default function purchaseList() {
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get('http://localhost:5050/consumables')
+      .then(({ data }) => {
+        setItems(data);
+      })
+      .catch(() => {
+        console.error('Plz fix your call, or set up your internet');
+      });
+  }, []);
   return (
     <>
       <SPurchaseList>
@@ -22,9 +36,34 @@ export default function purchaseList() {
           </div>
           <div className="containerButton">
             <button className="cartButton" type="button">
-              Ajouter au panier
+              Add to Cart
             </button>
           </div>
+        </div>
+        <div className="grid">
+          {items.map((item) => {
+            return (
+              <div className="article1">
+                <div className="status">
+                  <h3>Because you bought RELATED PRODUCT</h3>
+                  <p>Ordered on DATE</p>
+                </div>
+                <div className="rowArticle">
+                  <img src={item.picture} alt={item.name} />
+                  <div className="details">
+                    <p>{item.name} </p>
+                    <p>Ref: {item.reference}</p>
+                    <p>Price: {item.cost}€</p>
+                  </div>
+                </div>
+                <div className="containerButton">
+                  <button className="cartButton" type="button">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </SPurchaseList>
     </>

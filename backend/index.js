@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.get('/article', async (req, res) => {
+app.get('/articles', async (req, res) => {
   const list = db.query(
     `SELECT DISTINCT(idConsumables)
       FROM articles
@@ -14,6 +14,7 @@ app.get('/article', async (req, res) => {
       INNER JOIN orderline ON articles.id = orderline.idArticles
       INNER JOIN orders ON order.id = orderline.idOrders
       INNER JOIN users ON users.id = orderline.idOrders
+      WHERE users.id = 1
       ;`
   );
   try {
@@ -23,7 +24,6 @@ app.get('/article', async (req, res) => {
   `);
     res.json(listArticles);
   } catch (err) {
-    console.warn(err);
     res.status(404).send();
   }
 });

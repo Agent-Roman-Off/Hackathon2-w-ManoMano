@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.get('/articles', async (req, res) => {
+app.get('/consumables', async (req, res) => {
   try {
     const [lists] = await db.query(
       `SELECT DISTINCT(idConsumables)

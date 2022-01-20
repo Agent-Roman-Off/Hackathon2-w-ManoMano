@@ -15,7 +15,7 @@ export default function BasketPage() {
                 Total of the basket including VAT Delivery costs calculated in
                 the next step
               </p>
-              <p className="bigCharacter">232€98</p>
+              <p className="bigCharacter">195€31</p>
               <p>
                 Total of the basket including VAT Delivery costs calculated in
                 the next step
@@ -36,7 +36,6 @@ export default function BasketPage() {
               </p>
             </div>
             <div className="div3">
-              <Product />
               <Product />
             </div>
           </div>

@@ -1,11 +1,18 @@
 import { Routes, Route } from 'react-router-dom';
-import PurchaseList from './PurchaseList';
+import Header from './Components/Header';
+import PurchaseList from './Components/PurchaseList';
+// import Basket from './Components/Basket';
+import './reset.css';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<PurchaseList />} />
-    </Routes>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/resupply" element={<PurchaseList />} />
+        {/* <Route path='/checkout' element={<Basket/>}/> */}
+      </Routes>
+    </>
   );
 }
 

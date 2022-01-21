@@ -25,7 +25,10 @@ function Header() {
         </div>
         <div className="basketCont">
           <NavLink to="checkout">
-            <img src="" alt="basket" />
+            <img
+              src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/48/0c193a/external-cart-essentials-icongeek26-glyph-icongeek26.png"
+              alt="basket"
+            />
           </NavLink>
         </div>
       </section>

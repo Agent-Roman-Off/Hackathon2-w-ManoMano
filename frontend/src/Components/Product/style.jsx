@@ -7,7 +7,8 @@ const ProductStyle = styled.main`
   .product {
     border-radius: 1rem;
     padding: 2rem 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.13);
   }
 
   figure {

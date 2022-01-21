@@ -7,7 +7,7 @@ const SHeader = styled.header`
   justify-content: space-around;
   align-items: center;
   box-shadow: 2px 7px 7px -4px rgba(0, 0, 0, 0.5);
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   .logoCont {
     width: 200px;
   }

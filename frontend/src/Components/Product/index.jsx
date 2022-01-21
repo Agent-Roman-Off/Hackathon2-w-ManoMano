@@ -7,7 +7,7 @@ export default function Product() {
         <section className="product">
           <figure>
             <img
-              src="https://media.adeo.com/marketplace/LMFR/80131114/52972e10-e640-4b06-8877-33a841bb66f6.jpeg?width=650&height=650&format=jpg&quality=80&fit=bounds"
+              src="https://thumbs.dreamstime.com/b/blue-paint-can-4216779.jpg"
               alt="images"
             />
             <p>Can of blue paint 12L</p>
@@ -38,7 +38,7 @@ export default function Product() {
         <section className="product">
           <figure>
             <img
-              src="https://media.adeo.com/marketplace/LMFR/80131114/52972e10-e640-4b06-8877-33a841bb66f6.jpeg?width=650&height=650&format=jpg&quality=80&fit=bounds"
+              src="https://m.media-amazon.com/images/I/81CAvlu23+S._AC_SX355_.jpg"
               alt="images"
             />
             <p>Box of 1000 screws, 5&lsquo;x60&lsquo;</p>
@@ -69,7 +69,7 @@ export default function Product() {
         <section className="product">
           <figure>
             <img
-              src="https://media.adeo.com/marketplace/LMFR/80131114/52972e10-e640-4b06-8877-33a841bb66f6.jpeg?width=650&height=650&format=jpg&quality=80&fit=bounds"
+              src="https://www.bricoman.fr/pub/media/catalog/product/2/9/a/d/vis_tete_fraisee_empreinte_torx_x_mm_pieces_acier_inoxydable_spax_739473_picture_01.jpg?width=400&height=400&canvas=400:400&quality=80&bg-color=255,255,255&fit=bounds"
               alt="images"
             />
             <p>Box of 100 screws for wood, 6&lsquo;x120&lsquo;</p>
@@ -100,7 +100,7 @@ export default function Product() {
         <section className="product">
           <figure>
             <img
-              src="https://media.adeo.com/marketplace/LMFR/80131114/52972e10-e640-4b06-8877-33a841bb66f6.jpeg?width=650&height=650&format=jpg&quality=80&fit=bounds"
+              src="https://assets.mitre10.co.nz/sys-master/productimages/h27/h37/9038652276766/293063xlg.jpg"
               alt="images"
             />
             <p>Box of 5kg of flat head nails</p>

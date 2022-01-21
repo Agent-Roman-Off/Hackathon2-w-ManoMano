@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
     <HomePageStyle>
       <div className="homePageContent">
-        <img src={webImage} alt="site" />
+        <img className="homePicture" src={webImage} alt="site" />
       </div>
     </HomePageStyle>
   );

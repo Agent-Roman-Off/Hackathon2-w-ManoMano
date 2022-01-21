@@ -33,7 +33,13 @@ export default function purchaseList() {
                   <p>Ordered on DATE</p>
                 </div>
                 <div className="rowArticle">
-                  <img src={item.picture} alt={item.name} />
+                  <div className="picContainer">
+                    <img
+                      className="articlePicture"
+                      src={item.picture}
+                      alt={item.name}
+                    />
+                  </div>
                   <div className="details">
                     <p>{item.name} </p>
                     <p>Ref: {item.reference}</p>

@@ -45,6 +45,13 @@ const SPurchaseList = styled.main`
         padding-top: 20px;
         padding-left: 10px;
       }
+      .picContainer {
+        width: 100px;
+        margin: 20px;
+      }
+    }
+    .articlePicture {
+      width: 100%;
     }
     .containerButton {
       width: 100%;

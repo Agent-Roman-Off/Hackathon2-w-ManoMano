@@ -22,20 +22,20 @@ const ProductStyle = styled.main`
   .counter {
     display: flex;
     height: 1.2rem;
-    align-items : center;
+    align-items: center;
     border: 1px solid #d4d4d4;
   }
   .counter button {
-    height 1rem;
+    height: 1rem;
     border: none;
     padding: 0rem 0.5rem;
   }
-  .priceProduct{
+  .priceProduct {
     display: flex;
     justify-content: space-around;
     font-size: 1.2rem;
   }
-  .priceProduct button{
+  .priceProduct button {
     border: none;
     color: grey;
   }

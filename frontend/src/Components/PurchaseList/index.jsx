@@ -22,7 +22,7 @@ export default function purchaseList() {
           </div>
           <div className="containerButton">
             <button className="cartButton" type="button">
-              Ajouter au panier
+              Add to cart
             </button>
           </div>
         </div>
